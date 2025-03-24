@@ -17,6 +17,7 @@ document.addEventListener("keypress",function(){
     }
 });
 
+
 function gameFlash(btn){
     btn.classList.add("gameFlash");
     setTimeout(function(){
@@ -62,8 +63,8 @@ function check(idx){
         h2.innerHTML = `Game Over! Your score is <b> ${level} </b>  <br>Press any key to start`;
         document.querySelector("body").style.backgroundColor = "red";
         setTimeout(()=>{
-            document.querySelector("body").style.backgroundColor="ww#032250";
-        },100);
+            document.querySelector("body").style.backgroundColor="#032250";
+        },50);
         reset();
     }
 }
